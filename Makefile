@@ -27,7 +27,7 @@ $(OBJ_PATH) :
 	mkdir $(OBJ_PATH)
 
 $(OBJ_PATH)%.o: %.c | $(OBJ_PATH)
-	$(CC) $(CLFAGS) $(IFLAGS) $(DEPEND) -c $< -o $@
+	$(CC) $(CFLAGS) $(IFLAGS) $(DEPEND) -c $< -o $@
 
 $(SNAME) $(CNAME): $(OBJ_PATH) $(SOBJS) $(COBJS)
 	make -C $(LIBFTPATH)

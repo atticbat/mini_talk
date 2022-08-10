@@ -6,7 +6,7 @@
 /*   By: khatlas < khatlas@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/06 01:34:56 by khatlas           #+#    #+#             */
-/*   Updated: 2022/08/10 01:14:08 by khatlas          ###   ########.fr       */
+/*   Updated: 2022/08/10 03:15:22 by khatlas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,6 @@ static int	error_glossary(int err)
 
 int	main(int argc, char **argv)
 {
-	int	j;
 	int	pid;
 	int	err;
 

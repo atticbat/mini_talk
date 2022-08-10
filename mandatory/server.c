@@ -6,7 +6,7 @@
 /*   By: khatlas < khatlas@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/05 19:46:39 by khatlas           #+#    #+#             */
-/*   Updated: 2022/08/10 00:35:03 by khatlas          ###   ########.fr       */
+/*   Updated: 2022/08/10 03:15:09 by khatlas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ static int	find_null(void)
 
 void	handler(int signum, siginfo_t *info, void *ignore)
 {
+	(void) ignore;
 	g_decoded.sender = info->si_pid;
 	g_decoded.to_send = 1;
 	if (signum == SIGUSR1)
